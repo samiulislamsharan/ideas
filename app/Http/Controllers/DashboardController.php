@@ -24,16 +24,6 @@ class DashboardController extends Controller
             ]
         ];
 
-        $idea = new Idea(
-            [
-                'content' => 'Hello World!'
-            ]
-        );
-        $idea->save();
-
-
-        dump($idea::all());
-
         return view(
             'dashboard',
             [
