@@ -3,9 +3,9 @@
     <form action="{{ route('idea.create') }}" method="post">
         @csrf
         <div class="mb-3">
-            <textarea name="idea" class="form-control" id="idea" rows="3" placeholder="Any idea today?"></textarea>
+            <textarea name="content" class="form-control" id="content" rows="3" placeholder="Any idea today?"></textarea>
             {{-- display error if form validation fails --}}
-            @error('idea')
+            @error('content')
                 <div class="d-block mt-2 fs-6 text-danger"> {{ $message }} </div>
             @enderror
         </div>
