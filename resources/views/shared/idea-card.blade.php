@@ -11,7 +11,7 @@
                 </div>
             </div>
             <div>
-                <form method="POST" action="{{ route('ideas.destroy', $idea->id) }}">
+                <form method="POST" action="{{ route('idea.destroy', $idea->id) }}">
                     @csrf
                     @method('delete')
                     <a href="{{ route('idea.edit', $idea->id) }}" class="badge text-bg-primary">edit
@@ -25,9 +25,27 @@
     </div>
     {{-- ideas section --}}
     <div class="card-body">
-        <p class="fs-6 fw-light text-muted">
-            {{ $idea->content }}
-        </p>
+
+        @if ($editing ?? false)
+            <form action="{{ route('idea.update', $idea->id) }}" method="post">
+                @csrf
+                @method('put')
+                <div class="mb-3">
+                    <textarea name="content" class="form-control" id="content" rows="3" placeholder="Any idea today?">{{ $idea->content }}</textarea>
+                    {{-- display error if form validation fails --}}
+                    @error('content')
+                        <div class="d-block mt-2 fs-6 text-danger"> {{ $message }} </div>
+                    @enderror
+                </div>
+                <div class="">
+                    <button type="submit" class="btn btn-dark"> Update </button>
+                </div>
+            </form>
+        @else
+            <p class="fs-6 fw-light text-muted">
+                {{ $idea->content }}
+            </p>
+        @endif
         {{-- like and date --}}
         <div class="d-flex justify-content-between">
             <div>
