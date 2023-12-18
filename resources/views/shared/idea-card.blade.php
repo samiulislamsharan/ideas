@@ -10,6 +10,17 @@
                         </a></h5>
                 </div>
             </div>
+            <div>
+                <form method="POST" action="{{ route('ideas.destroy', $idea->id) }}">
+                    @csrf
+                    @method('delete')
+                    <a href="{{ route('idea.edit', $idea->id) }}" class="badge text-bg-primary">edit
+                    </a>
+                    <a href="{{ route('idea.show', $idea->id) }}" class="badge text-bg-primary">view
+                    </a>
+                    <button class="ms-1 btn btn-danger btn-sm"> X </button>
+                </form>
+            </div>
         </div>
     </div>
     {{-- ideas section --}}
