@@ -29,10 +29,10 @@ Route::put('/idea/{idea}', [IdeaController::class, 'update'])->name('idea.update
 
 Route::delete('/ideas/{idea}', [IdeaController::class, 'destroy'])->name('idea.destroy');
 
-Route::get('/profile', [ProfileController::class, 'index']);
+Route::get('/profile', [ProfileController::class, 'index'])->name('profile');
 
-Route::get('/feed', [FeedController::class, 'index']);
+Route::get('/feed', [FeedController::class, 'index'])->name('feed');
 
 Route::get('/terms', function () {
     return view('terms');
-});
+})->name('terms');
