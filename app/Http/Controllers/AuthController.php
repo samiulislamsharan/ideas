@@ -17,7 +17,6 @@ class AuthController extends Controller
     {
         // Validate the user
         // Create the user
-        // Sign the user in
         // Redirect the user
 
         $validated = request()->validate([
@@ -37,5 +36,43 @@ class AuthController extends Controller
         );
 
         return redirect()->route('dashboard')->with('successMessage', 'Account created successfully!');
+    }
+
+    public function login()
+    {
+        return view('auth.login');
+    }
+
+    public function authenticate()
+    {
+        // Validate the user
+        // Redirect the user
+
+        $validated = request()->validate([
+            'email' => 'required|email',
+            'password' => 'required|min:8',
+        ]);
+
+        if (auth()->attempt($validated)) {
+
+            request()->session()->regenerate();
+
+            return redirect()->route('dashboard')->with('successMessage', 'Logged in successfully!');
+        }
+
+        return redirect()->route('login')->withErrors([
+            'email' => 'Your provided credentials could not be verified.'
+        ]);
+    }
+
+    public function logout()
+    {
+        auth()->logout();
+
+        request()->session()->invalidate();
+
+        request()->session()->regenerateToken();
+
+        return redirect()->route('dashboard')->with('successMessage', 'Logged out successfully!');
     }
 }
