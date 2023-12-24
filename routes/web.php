@@ -21,6 +21,7 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', [DashboardController::class, 'index'])->name('dashboard');
 
+
 Route::post('/ideas', [IdeaController::class, 'store'])->name('idea.create');
 
 Route::get('/ideas/{idea}', [IdeaController::class, 'show'])->name('idea.show');
@@ -31,11 +32,20 @@ Route::put('/ideas/{idea}', [IdeaController::class, 'update'])->name('idea.updat
 
 Route::delete('/ideas/{idea}', [IdeaController::class, 'destroy'])->name('idea.destroy');
 
+
 Route::post('/ideas/{idea}/comments', [CommentController::class, 'store'])->name('ideas.comments.store');
 
 
 Route::get('/register', [AuthController::class, 'register'])->name('register');
+
 Route::post('/register', [AuthController::class, 'store']);
+
+
+Route::get('/login', [AuthController::class, 'login'])->name('login');
+
+Route::post('/login', [AuthController::class, 'authenticate']);
+
+Route::post('/logout', [AuthController::class, 'logout'])->name('logout');
 
 
 Route::get('/profile', [ProfileController::class, 'index'])->name('profile');
