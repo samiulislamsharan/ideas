@@ -16,6 +16,8 @@ class IdeaController extends Controller
             ]
         );
 
+        $validated['user_id'] = auth()->id();
+
         Idea::create($validated);
 
         return redirect()->route('dashboard')->with('successMessage', 'Idea created successfully!');
@@ -28,6 +30,10 @@ class IdeaController extends Controller
 
     public function edit(Idea $idea)
     {
+        if (auth()->id() !== $idea->user_id) {
+            abort(404, 'Unauthorized');
+        }
+
         $editing = true;
 
         return view('ideas.show', compact('idea', 'editing'));
@@ -41,6 +47,10 @@ class IdeaController extends Controller
             ]
         );
 
+        if (auth()->id() !== $idea->user_id) {
+            abort(404, 'Unauthorized');
+        }
+
         $idea->update($validated);
 
         return redirect()->route('idea.show', $idea->id)->with('successMessage', 'Idea updated successfully!');
@@ -48,6 +58,10 @@ class IdeaController extends Controller
 
     public function destroy(Idea $idea)
     {
+        if (auth()->id() !== $idea->user_id) {
+            abort(404, 'Unauthorized');
+        }
+
         $idea->delete();
 
         return redirect()->route('dashboard')->with('successMessage', 'Idea deleted successfully!');
