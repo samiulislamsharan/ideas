@@ -21,32 +21,24 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', [DashboardController::class, 'index'])->name('dashboard');
 
+Route::group(['prefix' => 'ideas/', 'as' => 'idea.'], function () {
 
-Route::post('/ideas', [IdeaController::class, 'store'])->name('idea.create');
+    Route::post('/', [IdeaController::class, 'store'])->name('create');
 
-Route::get('/ideas/{idea}', [IdeaController::class, 'show'])->name('idea.show');
-
-Route::get('/ideas/{idea}/edit', [IdeaController::class, 'edit'])->name('idea.edit')->middleware('auth');
-
-Route::put('/ideas/{idea}', [IdeaController::class, 'update'])->name('idea.update')->middleware('auth');
-
-Route::delete('/ideas/{idea}', [IdeaController::class, 'destroy'])->name('idea.destroy')->middleware('auth');
+    Route::get('/{idea}', [IdeaController::class, 'show'])->name('show');
 
 
-Route::post('/ideas/{idea}/comments', [CommentController::class, 'store'])->name('ideas.comments.store')->middleware('auth');
+    Route::group(['middleware' => ['auth']], function () {
 
+        Route::get('/{idea}/edit', [IdeaController::class, 'edit'])->name('edit');
 
-Route::get('/register', [AuthController::class, 'register'])->name('register');
+        Route::put('/{idea}', [IdeaController::class, 'update'])->name('update');
 
-Route::post('/register', [AuthController::class, 'store']);
+        Route::delete('/{idea}', [IdeaController::class, 'destroy'])->name('destroy');
 
-
-Route::get('/login', [AuthController::class, 'login'])->name('login');
-
-Route::post('/login', [AuthController::class, 'authenticate']);
-
-Route::post('/logout', [AuthController::class, 'logout'])->name('logout');
-
+        Route::post('/{idea}/comments', [CommentController::class, 'store'])->name('comments.store');
+    });
+});
 
 Route::get('/profile', [ProfileController::class, 'index'])->name('profile');
 
