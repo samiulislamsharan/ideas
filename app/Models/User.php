@@ -45,6 +45,10 @@ class User extends Authenticatable
     ];
 
     public function ideas(){
-        return $this->hasMany(Idea::class);
+        return $this->hasMany(Idea::class)->latest();
+    }
+
+    public function comments(){
+        return $this->hasMany(Comment::class);
     }
 }
