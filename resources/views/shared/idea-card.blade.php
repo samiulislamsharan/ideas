@@ -13,12 +13,12 @@
             </div>
             @auth
                 <div>
-                    <form method="POST" action="{{ route('idea.destroy', $idea->id) }}">
+                    <form method="POST" action="{{ route('ideas.destroy', $idea->id) }}">
                         @csrf
                         @method('delete')
-                        <a href="{{ route('idea.edit', $idea->id) }}" class="badge text-bg-primary">edit
+                        <a href="{{ route('ideas.edit', $idea->id) }}" class="badge text-bg-primary">edit
                         </a>
-                        <a href="{{ route('idea.show', $idea->id) }}" class="badge text-bg-primary">view
+                        <a href="{{ route('ideas.show', $idea->id) }}" class="badge text-bg-primary">view
                         </a>
                         <button class="ms-1 btn btn-danger btn-sm"> X </button>
                     </form>
@@ -26,7 +26,7 @@
             @endauth
 
             @guest
-                <a href="{{ route('idea.show', $idea->id) }}" class="badge text-bg-primary">view
+                <a href="{{ route('ideas.show', $idea->id) }}" class="badge text-bg-primary">view
                 </a>
             @endguest
         </div>
@@ -35,7 +35,7 @@
     <div class="card-body">
 
         @if ($editing ?? false)
-            <form action="{{ route('idea.update', $idea->id) }}" method="post">
+            <form action="{{ route('ideas.update', $idea->id) }}" method="post">
                 @csrf
                 @method('put')
                 <div class="mb-3">
