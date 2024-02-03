@@ -11,16 +11,19 @@
             <ul class="navbar-nav">
                 @guest
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="{{ route('login') }}">Login</a>
+                        <a class=" {{ Route::is('login') ? 'active' : '' }} nav-link" aria-current="page"
+                            href="{{ route('login') }}">Login</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="{{ route('register') }}">Register</a>
+                        <a class=" {{ Route::is('terms') ? 'active' : '' }} nav-link"
+                            href="{{ route('register') }}">Register</a>
                     </li>
                 @endguest
 
                 @auth
                     <li class="nav-item">
-                        <a class="nav-link" href="{{ route('profile') }}">{{ Auth::user()->name }}</a>
+                        <a class="{{ Route::is('profile') ? 'active' : '' }} nav-link"
+                            href="{{ route('profile') }}">{{ Auth::user()->name }}</a>
                     </li>
                     <li class="nav-item">
                         <form action="{{ route('logout') }}" method="post">
