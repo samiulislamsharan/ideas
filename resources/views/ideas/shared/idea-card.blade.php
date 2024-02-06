@@ -6,9 +6,12 @@
                 <img style="width:50px" class="me-2 avatar-sm rounded-circle" src="{{ $idea->user->getImageURL() }}"
                     alt="{{ $idea->user->name }}">
                 <div>
-                    <h5 class="card-title mb-0"><a href="{{ route('users.show', $idea->user->id) }}">
+                    <h5 class="card-title mb-0">
+                        <a class="link-underline link-underline-opacity-0"
+                            href="{{ route('users.show', $idea->user->id) }}">
                             {{ $idea->user->name }}
-                        </a></h5>
+                        </a>
+                    </h5>
                 </div>
             </div>
             @auth
