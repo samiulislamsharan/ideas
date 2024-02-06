@@ -7,15 +7,15 @@
         </div>
         <div class="col-6">
             @include('shared.success-message')
-            @include('shared.submit-idea')
+            @include('ideas.shared.submit-idea')
             <hr>
             @forelse ($ideas as $idea)
                 <div class="mt-3">
-                    @include('shared.idea-card')
+                    @include('ideas.shared.idea-card')
                 </div>
             @empty
                 <div class="alert alert-info text-center">
-                    No ideas found.
+                    No Ideas found.
                 </div>
             @endforelse
             <div class="mt-3">
