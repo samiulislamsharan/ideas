@@ -8,7 +8,7 @@
         <div class="col-6">
             @include('shared.success-message')
             <div class="mt-3">
-                @include('shared.user-edit-card')
+                @include('users.shared.user-edit-card')
             </div>
             <hr>
 
