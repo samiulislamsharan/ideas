@@ -36,8 +36,6 @@ Route::resource('users', UserController::class)->only(['show', 'edit', 'update']
 
 Route::get('profile', [UserController::class, 'profile'])->middleware('auth')->name('profile');
 
-Route::get('/feed', [FeedController::class, 'index'])->name('feed');
-
 
 Route::post('users/{user}/follow', [FollowerController::class, 'follow'])->middleware('auth')->name('users.follow');
 
@@ -47,6 +45,9 @@ Route::post('users/{user}/unfollow', [FollowerController::class, 'unfollow'])->m
 Route::post('ideas/{idea}/like', [IdeaLikeController::class, 'like'])->middleware('auth')->name('ideas.like');
 
 Route::post('ideas/{idea}/unlike', [IdeaLikeController::class, 'unlike'])->middleware('auth')->name('ideas.unlike');
+
+
+Route::get('/feed', FeedController::class)->middleware('auth')->name('feed');
 
 
 Route::get('/terms', function () {
