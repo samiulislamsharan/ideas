@@ -15,7 +15,7 @@
                 </div>
             </div>
             @auth
-                @if (Auth::id() === $idea->user->id)
+                @can('idea.edit', $idea)
                     <div>
                         <form method="POST" action="{{ route('ideas.destroy', $idea->id) }}">
                             @csrf
@@ -29,12 +29,7 @@
                             <button class="ms-1 btn btn-danger btn-sm"> X </button>
                         </form>
                     </div>
-                @else
-                    <div>
-                        <a href="{{ route('ideas.show', $idea->id) }}"
-                            class="badge text-bg-primary link-underline link-underline-opacity-0">view</a>
-                    </div>
-                @endif
+                @endcan
             @endauth
 
             @guest
