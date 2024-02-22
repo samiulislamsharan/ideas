@@ -1,4 +1,4 @@
-@extends('layout.layout')
+@extends('layout.app')
 
 @section('content')
     <h1>TERMS & CONDITIONS</h1>
