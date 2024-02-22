@@ -1,5 +1,7 @@
 @extends('layout.app')
 
+@section('title', 'Terms')
+
 @section('content')
     <h1>TERMS & CONDITIONS</h1>
     <hr>
