@@ -16,6 +16,7 @@ return [
     'home' => 'Home',
     'feed' => 'Feed',
     'terms' => 'Terms',
+    'language' => 'Language',
     'en' => 'EN',
     'bn' => 'BN',
     'share_ideas' => 'Share yours ideas',
@@ -33,5 +34,6 @@ return [
     'follow' => 'Follow',
     'unfollow' => 'Unfollow',
     'who_to_follow' => 'Who to follow',
+    'no_ideas' => 'No ideas found.',
 
 ];
