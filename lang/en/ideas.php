@@ -13,13 +13,22 @@ return [
     |
     */
 
-    'en'=>'EN',
-    'bn'=>'BN',
+    'home' => 'Home',
+    'feed' => 'Feed',
+    'terms' => 'Terms',
+    'en' => 'EN',
+    'bn' => 'BN',
     'share_ideas' => 'Share yours ideas',
     'log_into_share_ideas' => 'Log into Share Ideas',
     'share' => 'Share',
     'any_idea' => 'Any idea today?',
     'search' => 'Search',
-    'search_here'=>'search',
+    'search_here' => 'search',
+    'search_btn' => 'Search',
+    'edit' => 'Edit',
+    'view' => 'View',
+    'update' => 'Update',
+    'post_comment' => 'Post Comment',
+    'no_comments' => 'No Comments found.'
 
 ];
