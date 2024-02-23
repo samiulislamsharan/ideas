@@ -17,7 +17,7 @@
                 </div>
             @empty
                 <div class="alert alert-info text-center">
-                    No Ideas found.
+                    {{ __('ideas.no_ideas') }}
                 </div>
             @endforelse
             <div class="mt-3">
