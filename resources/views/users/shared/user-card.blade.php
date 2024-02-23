@@ -11,7 +11,8 @@
             </div>
             <div>
                 @can('update', $user)
-                    <a href="{{ route('users.edit', $user->id) }}" class="badge badge-primary text-bg-primary">Edit</a>
+                    <a href="{{ route('users.edit', $user->id) }}"
+                        class="badge badge-primary text-bg-primary">{{ __('ideas.edit') }}</a>
                 @endcan
             </div>
         </div>
@@ -28,14 +29,14 @@
                             <form method="POST" action="{{ route('users.unfollow', $user->id) }}">
                                 @csrf
                                 <div class="mt-3">
-                                    <button class="btn btn-danger btn-sm"> UnFollow </button>
+                                    <button class="btn btn-danger btn-sm"> {{ __('ideas.follow') }} </button>
                                 </div>
                             </form>
                         @else
                             <form method="POST" action="{{ route('users.follow', $user->id) }}">
                                 @csrf
                                 <div class="mt-3">
-                                    <button class="btn btn-primary btn-sm"> Follow </button>
+                                    <button class="btn btn-primary btn-sm"> {{ __('ideas.follow') }} </button>
                                 </div>
                             </form>
                         @endif
