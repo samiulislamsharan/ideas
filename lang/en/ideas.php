@@ -29,6 +29,9 @@ return [
     'view' => 'View',
     'update' => 'Update',
     'post_comment' => 'Post Comment',
-    'no_comments' => 'No Comments found.'
+    'no_comments' => 'No Comments found.',
+    'follow' => 'Follow',
+    'unfollow' => 'Unfollow',
+    'who_to_follow' => 'Who to follow',
 
 ];
