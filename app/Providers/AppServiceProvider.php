@@ -4,8 +4,7 @@ namespace App\Providers;
 
 use App\Models\User;
 use Carbon\Carbon;
-use Illuminate\Contracts\Pagination\Paginator;
-use Illuminate\Pagination\Paginator as PaginationPaginator;
+use Illuminate\Pagination\Paginator;
 use Illuminate\Support\Facades\Cache;
 use Illuminate\Support\Facades\View;
 use Illuminate\Support\ServiceProvider;
@@ -25,7 +24,7 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot(): void
     {
-        PaginationPaginator::useBootstrapFive();
+        Paginator::useBootstrapFive();
 
         $topUsers = Cache::remember('topUsers', Carbon::now()->addMinutes(5), function () {
             return User::withCount('ideas')
