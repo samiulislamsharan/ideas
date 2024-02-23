@@ -4,17 +4,20 @@
             <li class="nav-item">
                 <a class="{{ Route::is('dashboard') ? 'text-white bg-primary rounded' : '' }} nav-link text-dark"
                     href="{{ route('dashboard') }}">
-                    <span>Home</span></a>
+                    <span>{{ __('ideas.home') }}</span>
+                </a>
             </li>
             <li class="nav-item">
                 <a class="{{ Route::is('feed') ? 'text-white bg-primary rounded' : '' }} nav-link text-dark"
                     href="{{ route('feed') }}">
-                    <span>Feed</span></a>
+                    <span>{{ __('ideas.feed') }}</span>
+                </a>
             </li>
             <li class="nav-item">
                 <a class="{{ Route::is('terms') ? 'text-white bg-primary rounded' : '' }} nav-link text-dark"
                     href="{{ route('terms') }}">
-                    <span>Terms</span></a>
+                    <span>{{ __('ideas.terms') }}</span>
+                </a>
             </li>
         </ul>
     </div>

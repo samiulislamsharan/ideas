@@ -21,10 +21,10 @@
                             @csrf
                             @method('delete')
                             <a href="{{ route('ideas.edit', $idea->id) }}"
-                                class="badge text-bg-primary link-underline link-underline-opacity-0">edit
+                                class="badge text-bg-primary link-underline link-underline-opacity-0">{{ __('ideas.edit') }}
                             </a>
                             <a href="{{ route('ideas.show', $idea->id) }}"
-                                class="badge text-bg-primary link-underline link-underline-opacity-0">view
+                                class="badge text-bg-primary link-underline link-underline-opacity-0">{{ __('ideas.view') }}
                             </a>
                             <button class="ms-1 btn btn-danger btn-sm"> X </button>
                         </form>
@@ -34,7 +34,7 @@
 
             @guest
                 <a href="{{ route('ideas.show', $idea->id) }}"
-                    class="badge text-bg-primary link-underline link-underline-opacity-0">view</a>
+                    class="badge text-bg-primary link-underline link-underline-opacity-0">{{ __('ideas.view') }}</a>
             @endguest
         </div>
     </div>
@@ -46,14 +46,14 @@
                 @csrf
                 @method('put')
                 <div class="mb-3">
-                    <textarea name="content" class="form-control" id="content" rows="3" placeholder="Any idea today?">{{ $idea->content }}</textarea>
+                    <textarea name="content" class="form-control" id="content" rows="3" placeholder="Any idea today?">{{ __('ideas.update') }}</textarea>
                     {{-- display error if form validation fails --}}
                     @error('content')
                         <div class="d-block mt-2 fs-6 text-danger"> {{ $message }} </div>
                     @enderror
                 </div>
                 <div class="">
-                    <button type="submit" class="btn btn-dark"> Update </button>
+                    <button type="submit" class="btn btn-dark"> {{ __('ideas.update') }} </button>
                 </div>
             </form>
         @else
