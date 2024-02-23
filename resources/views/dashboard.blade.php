@@ -1,6 +1,6 @@
 @extends('layout.app')
 
-@section('title', 'Dashboard')
+@section('title', 'Home')
 
 @section('content')
     <div class="row">
