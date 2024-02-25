@@ -2,6 +2,11 @@
 
 @section('content')
     <div class="row">
-        <h1>Admin Dashboard</h1>
+        <div class="col-3">
+            @include('admin.shared.left-sidebar')
+        </div>
+        <div class="col-9">
+            <h1>{{ __('admin.admin_dashboard') }}</h1>
+        </div>
     </div>
 @endsection
