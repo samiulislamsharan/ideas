@@ -9,6 +9,7 @@ use App\Http\Controllers\FollowerController;
 use App\Http\Controllers\IdeaLikeController;
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\Admin\DashboardController as AdminDashboardController;
+use App\Http\Controllers\Admin\UserController as AdminUserController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -61,4 +62,7 @@ Route::get('/terms', function () {
 })->name('terms');
 
 
-Route::get('/admin', [AdminDashboardController::class, 'index'])->middleware(['auth', 'can:admin'])->name('admin.dashboard');
+Route::middleware(['auth', 'can:admin'])->prefix('/admin')->as('admin.')->group(function () {
+    Route::get('/', [AdminDashboardController::class, 'index'])->name('dashboard');
+    Route::get('/users', [AdminUserController::class, 'index'])->name('users');
+});
