@@ -10,7 +10,7 @@ class IdeaController extends Controller
 {
     public function index()
     {
-        $ideas = Idea::latest()->paginate(10);
+        $ideas = Idea::latest()->paginate(30);
 
         return view('admin.ideas.index', compact('ideas'));
     }
