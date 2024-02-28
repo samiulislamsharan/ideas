@@ -12,11 +12,11 @@
                 @guest
                     <li class="nav-item">
                         <a class=" {{ Route::is('login') ? 'active' : '' }} nav-link" aria-current="page"
-                            href="{{ route('login') }}">Login</a>
+                            href="{{ route('login') }}">{{ __('ideas.login') }}</a>
                     </li>
                     <li class="nav-item">
                         <a class=" {{ Route::is('terms') ? 'active' : '' }} nav-link"
-                            href="{{ route('register') }}">Register</a>
+                            href="{{ route('register') }}">{{ __('ideas.register') }}</a>
                     </li>
                 @endguest
 
@@ -24,7 +24,7 @@
                     @if (Auth::user()->is_admin)
                         <li class="nav-item">
                             <a class=" {{ Route::is('admin.dashboard') ? 'active' : '' }} nav-link"
-                                href="{{ route('admin.dashboard') }}">Admin</a>
+                                href="{{ route('admin.dashboard') }}">{{ __('admin.admin') }}</a>
                         </li>
 
                         <li class="{{ Route::is('admin.dashboard') ? 'active' : '' }} nav-link">
@@ -41,7 +41,7 @@
                     <li class="nav-item">
                         <form action="{{ route('logout') }}" method="post">
                             @csrf
-                            <input type="submit" value="Logout" class="btn btn-danger btn-sm">
+                            <input type="submit" value="{{ __('ideas.logout') }}" class="btn btn-danger btn-sm">
                         </form>
                     </li>
                 @endauth
