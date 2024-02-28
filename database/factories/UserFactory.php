@@ -2,6 +2,7 @@
 
 namespace Database\Factories;
 
+use Faker\Guesser\Name;
 use Illuminate\Database\Eloquent\Factories\Factory;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Str;
@@ -25,10 +26,14 @@ class UserFactory extends Factory
     {
         return [
             'name' => fake()->name(),
+            'bio' => fake()->sentence(),
+            'image' => 'https://api.dicebear.com/6.x/fun-emoji/svg?seed=' . Str::random(10),
+            'username' => fake()->unique()->userName(),
             'email' => fake()->unique()->safeEmail(),
-            'email_verified_at' => now(),
             'password' => static::$password ??= Hash::make('password'),
+            'email_verified_at' => now(),
             'remember_token' => Str::random(10),
+            'is_admin' => false,
         ];
     }
 
