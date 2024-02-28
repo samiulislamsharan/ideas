@@ -13,12 +13,19 @@ return [
     |
     */
 
+    // Navbar
+    'login' => 'Login',
+    'register' => 'Register',
+    'logout' => 'Logout',
+
+    // Left Sidebar
     'home' => 'Home',
     'feed' => 'Feed',
     'terms' => 'Terms',
     'language' => 'Language',
     'en' => 'EN',
     'bn' => 'BN',
+
     'share_ideas' => 'Share yours ideas',
     'log_into_share_ideas' => 'Log into Share Ideas',
     'share' => 'Share',

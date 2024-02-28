@@ -13,12 +13,19 @@ return [
     |
     */
 
+    // Navbar
+    'login' => 'লগ ইন',
+    'register' => 'রেজিস্টার',
+    'logout' => 'লগ আউট',
+
+    // Left Sidebar
     'home' => 'হোম',
     'feed' => 'ফিড',
     'terms' => 'শর্তাবলী',
     'language' => 'ভাষা',
     'en' => 'ইংরেজি',
     'bn' => 'বাংলা',
+
     'share_ideas' => 'আইডিয়া শেয়ার করুন',
     'log_into_share_ideas' => 'আইডিয়া শেয়ার করার জন্য লগ ইন করুন',
     'share' => 'শেয়ার করুন',
