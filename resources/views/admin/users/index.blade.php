@@ -10,7 +10,7 @@
         <div class="col-9">
             <h1>{{ __('admin.users') }}</h1>
 
-            <table class="table table-striped table-hover">
+            <table class="table table-striped table-hover" id="admin-users-table">
                 <thead class="table-dark">
                     <th>ID</th>
                     <th>Name</th>

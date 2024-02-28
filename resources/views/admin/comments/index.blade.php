@@ -11,7 +11,7 @@
             <h1>{{ __('admin.comments') }}</h1>
             @include('shared.success-message')
 
-            <table class="table table-striped table-hover">
+            <table class="table table-striped table-hover" id="admin-comments-table">
                 <thead class="table-dark">
                     <th>ID</th>
                     <th>User</th>
