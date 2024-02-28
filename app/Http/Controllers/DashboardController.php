@@ -13,7 +13,7 @@ class DashboardController extends Controller
             $query->search(request('search', ''));
         })
             ->orderBy('created_at', 'DESC')
-            ->paginate(5);
+            ->paginate(10);
 
         return view(
             'dashboard',
