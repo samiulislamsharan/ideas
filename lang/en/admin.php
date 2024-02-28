@@ -12,7 +12,16 @@ return [
     | these language lines according to your application's requirements.
     |
     */
+
+    // Navbar
+    'admin' => 'Admin',
+
+    // Sidebar
     'dashboard' => 'Dashboard',
-    'admin_dashboard' => 'Admin Dashboard',
     'users' => 'Users',
+    'ideas' => 'Ideas',
+    'comments' => 'Comments',
+
+    // Admin Panel Headings
+    'admin_dashboard' => 'Admin Dashboard',
 ];
