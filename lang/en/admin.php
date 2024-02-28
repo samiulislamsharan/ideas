@@ -24,4 +24,9 @@ return [
 
     // Admin Panel Headings
     'admin_dashboard' => 'Admin Dashboard',
+
+    // Widgets
+    'total_users' => 'Total Users',
+    'total_ideas' => 'Total Ideas',
+    'total_comments' => 'Total Comments',
 ];

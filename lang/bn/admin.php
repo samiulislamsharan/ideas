@@ -24,4 +24,9 @@ return [
 
     // Admin Panel Headings
     'admin_dashboard' => 'অ্যাডমিন ড্যাশবোর্ড',
+
+    // Widgets
+    'total_users' => 'মোট ব্যবহারকারী',
+    'total_ideas' => 'মোট আইডিয়া',
+    'total_comments' => 'মোট মন্তব্য',
 ];
