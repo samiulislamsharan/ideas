@@ -6,9 +6,24 @@
                     href="{{ route('admin.dashboard') }}">
                     <span>{{ __('admin.dashboard') }}</span>
                 </a>
-                <a class="{{ Route::is('admin.users') ? 'text-white bg-primary rounded' : '' }} nav-link text-dark"
-                    href="{{ route('admin.users') }}">
+            </li>
+            <li>
+                <a class="{{ Route::is('admin.users.index') ? 'text-white bg-primary rounded' : '' }} nav-link text-dark"
+                    href="{{ route('admin.users.index') }}">
                     <span>{{ __('admin.users') }}</span>
+                </a>
+            </li>
+            </li>
+            <li>
+                <a class="{{ Route::is('admin.ideas.index') ? 'text-white bg-primary rounded' : '' }} nav-link text-dark"
+                    href="{{ route('admin.ideas.index') }}">
+                    <span>{{ __('admin.ideas') }}</span>
+                </a>
+            </li>
+            <li>
+                <a class="{{ Route::is('admin.comments.index') ? 'text-white bg-primary rounded' : '' }} nav-link text-dark"
+                    href="{{ route('admin.comments.index') }}">
+                    <span>{{ __('admin.comments') }}</span>
                 </a>
             </li>
         </ul>
