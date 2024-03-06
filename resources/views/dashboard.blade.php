@@ -4,12 +4,14 @@
 
 @section('content')
     <div class="row">
-        <div class="col-3">
+        <div class="col-lg-3 col-sm-12">
             @include('shared.left-sidebar')
         </div>
-        <div class="col-6">
+        <div class="col-lg-6 col-sm-12">
             @include('shared.success-message')
-            @include('ideas.shared.submit-idea')
+            <div class="mt-2">
+                @include('ideas.shared.submit-idea')
+            </div>
             <hr>
             @forelse ($ideas as $idea)
                 <div class="mt-3">
@@ -25,7 +27,7 @@
                 {{ $ideas->withQueryString()->links() }}
             </div>
         </div>
-        <div class="col-3">
+        <div class="col-lg-3 col-sm-12">
             @include('shared.search-bar')
             @include('shared.follow-box')
         </div>

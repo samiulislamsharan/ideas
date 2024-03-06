@@ -29,7 +29,7 @@
                             <form method="POST" action="{{ route('users.unfollow', $user->id) }}">
                                 @csrf
                                 <div class="mt-3">
-                                    <button class="btn btn-danger btn-sm"> {{ __('ideas.follow') }} </button>
+                                    <button class="btn btn-danger btn-sm"> {{ __('ideas.unfollow') }} </button>
                                 </div>
                             </form>
                         @else

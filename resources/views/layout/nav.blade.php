@@ -22,17 +22,11 @@
 
                 @auth
                     @if (Auth::user()->is_admin)
-                        <li class="nav-item">
-                            <a class=" {{ Route::is('admin.dashboard') ? 'active' : '' }} nav-link"
-                                href="{{ route('admin.dashboard') }}">{{ __('admin.admin') }}</a>
-                        </li>
-
-                        <li class="{{ Route::is('admin.dashboard') ? 'active' : '' }} nav-link">
-                            <a class="fw-light active" href="/">
-                                <span class="fas fa-bolt">
-                                </span>
-                            </a>
-                        </li>
+                        <a class=" {{ Route::is('admin.dashboard') ? 'active' : '' }} nav-link"
+                            href="{{ route('admin.dashboard') }}">
+                            <span class="fas fa-bolt"> </span>
+                            {{ __('admin.admin') }}
+                        </a>
                     @endif
                     <li class="nav-item">
                         <a class="{{ Route::is('profile') ? 'active' : '' }} nav-link"
