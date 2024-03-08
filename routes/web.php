@@ -12,6 +12,7 @@ use App\Http\Controllers\UserController;
 use App\Http\Controllers\Admin\DashboardController as AdminDashboardController;
 use App\Http\Controllers\Admin\IdeaController as AdminIdeaController;
 use App\Http\Controllers\Admin\UserController as AdminUserController;
+use Illuminate\Support\Facades\Artisan;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -71,4 +72,24 @@ Route::middleware(['auth', 'can:admin'])->prefix('/admin')->as('admin.')->group(
     Route::resource('ideas', AdminIdeaController::class)->only('index');
 
     Route::resource('comments', AdminCommentController::class)->only('index', 'destroy');
+});
+
+// Artisan commands
+
+Route::get('/publish-error', function () {
+    Artisan::call('vendor:publish --tag=laravel-errors');
+
+    return "Published error views!";
+});
+
+Route::get('/storage-link', function () {
+    Artisan::call('storage:link');
+
+    return "Storage link created!";
+});
+
+Route::get('/cache-clear', function () {
+    Artisan::call('cache:clear');
+
+    return "Cache cleared!";
 });
