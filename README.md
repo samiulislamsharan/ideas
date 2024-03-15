@@ -20,13 +20,17 @@ This is our Environment Variables configuration file. Now we need to configure o
 
 Configuring Database:
 
+* Enter your SQL Server's username in `DB_USERNAME` and password in `DB_PASSWORD`
+* Create a database named same as `DB_DATABASE`
+* Note: Your SQL Server might run on a different port, in that case change the port number also!
+
 ```
 DB_CONNECTION=mysql
 DB_HOST=127.0.0.1
-DB_PORT=3307
+DB_PORT=3306
 DB_DATABASE=ideas
 DB_USERNAME=root
-DB_PASSWORD=admin
+DB_PASSWORD=
 ```
 
 Configuring SMTP:
