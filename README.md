@@ -12,9 +12,28 @@ To be able to run this project you need:
 - [PHP](https://www.php.net/ "Visit PHP's website") version 8.1 or later: [https://www.php.net/downloads.php](https://www.php.net/downloads.php) and
 - [MySQL Server](https://dev.mysql.com/ "Visit MySQL Website"): [https://dev.mysql.com/downloads/mysql](https://dev.mysql.com/downloads/mysql)
 
+To install project dependencies, open a terminal in the root directory of the project and execute the following command:
+
+```bash
+composer install
+```
+
+If you wanto keep all the packages updated then use:
+
+```bash
+composer update
+```
+
+Now start the development server for the project using:
+
+```bash
+php artisan serve
+```
+
+
 ## Configuration
 
-In the root directory of the project, you'll find `.env.example` file. Make a copy of it and paste it on the same directory then rename it to `.env`
+In the root directory (see Directory Structure below) of the project, you'll find `.env.example` file. Make a copy of it and paste it on the same directory then rename it to `.env`
 
 This is our Environment Variables configuration file. Now we need to configure our database and smtp.
 
@@ -138,11 +157,12 @@ ideas/
 
 ## Technology Stack
 
-- Laravel - A PHP Framework
-- MySQL
-- HTML
-- CSS
-- [Bootswatch](https://github.com/thomaspark/bootswatch) - A collection of open source themes for [Bootstrap](https://getbootstrap.com/)
+- ![Laravel](https://img.shields.io/badge/laravel-%23FF2D20.svg?style=for-the-badge&logo=laravel&logoColor=white)
+- ![PHP](https://img.shields.io/badge/php-%23777BB4.svg?style=for-the-badge&logo=php&logoColor=white)
+- ![MySQL](https://img.shields.io/badge/mysql-4479A1.svg?style=for-the-badge&logo=mysql&logoColor=white)
+- ![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
+- ![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)
+- [Bootswatch](https://github.com/thomaspark/bootswatch) - A collection of open source themes for [![Bootstrap](https://img.shields.io/badge/bootstrap-%238511FA.svg?style=for-the-badge&logo=bootstrap&logoColor=white)](https://getbootstrap.com/)
 
 ## Why choose this stack?
 
