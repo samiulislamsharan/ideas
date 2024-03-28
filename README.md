@@ -30,7 +30,6 @@ Now start the development server for the project using:
 php artisan serve
 ```
 
-
 ## Configuration
 
 In the root directory (see Directory Structure below) of the project, you'll find `.env.example` file. Make a copy of it and paste it on the same directory then rename it to `.env`
@@ -190,4 +189,8 @@ If you discover a security vulnerability within Laravel, please send an e-mail t
 
 ## License
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+* The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+* The PHP programming language is open-sourced software licensed under the [PHP License](https://www.php.net/license/3.01.txt).
+* The MySQL database is open-sourced software licensed under the [GNU General Public License](https://www.gnu.org/licenses/gpl-3.0.html).
+* The HTML5 and CSS3 are open-sourced software licensed under the [W3C Software Notice and License](https://www.w3.org/Consortium/Legal/2002/copyright-software-20021231).
+* The Bootswatch themes are open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
