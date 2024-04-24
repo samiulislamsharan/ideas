@@ -27,7 +27,7 @@ class UserFactory extends Factory
         return [
             'name' => fake()->name(),
             'bio' => fake()->sentence(),
-            'image' => 'https://api.dicebear.com/6.x/fun-emoji/svg?seed=' . Str::random(10),
+            'image' => 'NULL',
             'username' => fake()->unique()->userName(),
             'email' => fake()->unique()->safeEmail(),
             'password' => static::$password ??= Hash::make('password'),
