@@ -865,26 +865,10 @@
         .mso .footer__share-button p {
             font-family: sans-serif
         }
-    </style><!--[if mso]><style type="text/css" emb-not-inline>
-.mso div{border:0 none white !important}.mso .w560 .divider{}.mso .w560 .divider{Margin-left:260px !important;Margin-right:260px !important}.mso .w360 .divider{}.mso .w360 .divider{Margin-left:160px !important;Margin-right:160px !important}.mso .w260 .divider{}.mso .w260 .divider{Margin-left:110px !important;Margin-right:110px !important}.mso .w160 .divider{}.mso .w160 .divider{Margin-left:60px !important;Margin-right:60px !important}.mso .w60 .divider{}.mso .w60 .divider{Margin-left:10px !important;Margin-right:10px !important}.mso .w354 .divider{}.mso .w354 .divider{Margin-left:157px !important;Margin-right:157px !important}.mso .w250 .divider{}.mso .w250 .divider{Margin-left:105px !important;Margin-right:105px !important}.mso .w148 .divider{}.mso .w148 .divider{Margin-left:54px !important;Margin-right:54px !important}.mso .size-8,.mso .size-8-m,.mso .size-8-l{font-size:8px
-!important;line-height:14px !important}.mso .size-8-m{line-height:16px !important}.mso .size-8-l{line-height:24px !important}.mso .size-9,.mso .size-9-m,.mso .size-9-l{font-size:9px !important;line-height:16px !important}.mso .size-9-m{line-height:18px !important}.mso .size-9-l{line-height:27px !important}.mso .size-10,.mso .size-10-m,.mso .size-10-l{font-size:10px !important;line-height:18px !important}.mso .size-10-m{line-height:20px !important}.mso .size-10-l{line-height:30px !important}.mso .size-11,.mso .size-11-m,.mso .size-11-l{font-size:11px !important;line-height:19px !important}.mso .size-11-m{line-height:22px !important}.mso .size-11-l{line-height:33px !important}.mso .size-12,.mso .size-12-m,.mso .size-12-l{font-size:12px !important;line-height:19px !important}.mso .size-12-m{line-height:24px !important}.mso .size-12-l{line-height:36px !important}.mso .size-13,.mso
-.size-13-m,.mso .size-13-l{font-size:13px !important;line-height:21px !important}.mso .size-13-m{line-height:26px !important}.mso .size-13-l{line-height:39px !important}.mso .size-14,.mso .size-14-m,.mso .size-14-l{font-size:14px !important;line-height:21px !important}.mso .size-14-m{line-height:28px !important}.mso .size-14-l{line-height:42px !important}.mso .size-15,.mso .size-15-m,.mso .size-15-l{font-size:15px !important;line-height:23px !important}.mso .size-15-m{line-height:30px !important}.mso .size-15-l{line-height:45px !important}.mso .size-16,.mso .size-16-m,.mso .size-16-l{font-size:16px !important;line-height:24px !important}.mso .size-16-m{line-height:32px !important}.mso .size-16-l{line-height:48px !important}.mso .size-17,.mso .size-17-m,.mso .size-17-l{font-size:17px !important;line-height:26px !important}.mso .size-17-m{line-height:34px !important}.mso
-.size-17-l{line-height:51px !important}.mso .size-18,.mso .size-18-m,.mso .size-18-l{font-size:18px !important;line-height:26px !important}.mso .size-18-m{line-height:36px !important}.mso .size-18-l{line-height:54px !important}.mso .size-20,.mso .size-20-m,.mso .size-20-l{font-size:20px !important;line-height:28px !important}.mso .size-20-m{line-height:40px !important}.mso .size-20-l{line-height:60px !important}.mso .size-22,.mso .size-22-m,.mso .size-22-l{font-size:22px !important;line-height:31px !important}.mso .size-22-m{line-height:44px !important}.mso .size-22-l{line-height:66px !important}.mso .size-24,.mso .size-24-m,.mso .size-24-l{font-size:24px !important;line-height:32px !important}.mso .size-24-m{line-height:48px !important}.mso .size-24-l{line-height:72px !important}.mso .size-26,.mso .size-26-m,.mso .size-26-l{font-size:26px !important;line-height:34px !important}.mso
-.size-26-m{line-height:52px !important}.mso .size-26-l{line-height:78px !important}.mso .size-28,.mso .size-28-m,.mso .size-28-l{font-size:28px !important;line-height:36px !important}.mso .size-28-m{line-height:56px !important}.mso .size-28-l{line-height:84px !important}.mso .size-30,.mso .size-30-m,.mso .size-30-l{font-size:30px !important;line-height:38px !important}.mso .size-30-m{line-height:60px !important}.mso .size-30-l{line-height:90px !important}.mso .size-32,.mso .size-32-m,.mso .size-32-l{font-size:32px !important;line-height:40px !important}.mso .size-32-m{line-height:64px !important}.mso .size-32-l{line-height:96px !important}.mso .size-34,.mso .size-34-m,.mso .size-34-l{font-size:34px !important;line-height:43px !important}.mso .size-34-m{line-height:68px !important}.mso .size-34-l{line-height:102px !important}.mso .size-36,.mso .size-36-m,.mso .size-36-l{font-size:36px
-!important;line-height:43px !important}.mso .size-36-m{line-height:72px !important}.mso .size-36-l{line-height:108px !important}.mso .size-40,.mso .size-40-m,.mso .size-40-l{font-size:40px !important;line-height:47px !important}.mso .size-40-m{line-height:80px !important}.mso .size-40-l{line-height:120px !important}.mso .size-44,.mso .size-44-m,.mso .size-44-l{font-size:44px !important;line-height:50px !important}.mso .size-44-m{line-height:88px !important}.mso .size-44-l{line-height:132px !important}.mso .size-48,.mso .size-48-m,.mso .size-48-l{font-size:48px !important;line-height:54px !important}.mso .size-48-m{line-height:96px !important}.mso .size-48-l{line-height:144px !important}.mso .size-56,.mso .size-56-m,.mso .size-56-l{font-size:56px !important;line-height:60px !important}.mso .size-56-m{line-height:112px !important}.mso .size-56-l{line-height:168px !important}.mso
-.size-64,.mso .size-64-m,.mso .size-64-l{font-size:64px !important;line-height:68px !important}.mso .size-64-m{line-height:128px !important}.mso .size-64-l{line-height:192px !important}.mso .size-72,.mso .size-72-m,.mso .size-72-l{font-size:72px !important;line-height:76px !important}.mso .size-72-m{line-height:144px !important}.mso .size-72-l{line-height:216px !important}.mso .size-80,.mso .size-80-m,.mso .size-80-l{font-size:80px !important;line-height:84px !important}.mso .size-80-m{line-height:160px !important}.mso .size-80-l{line-height:240px !important}.mso .size-96,.mso .size-96-m,.mso .size-96-l{font-size:96px !important;line-height:100px !important}.mso .size-96-m{line-height:192px !important}.mso .size-96-l{line-height:288px !important}.mso .size-112,.mso .size-112-m,.mso .size-112-l{font-size:112px !important;line-height:116px !important}.mso .size-112-m{line-height:224px
-!important}.mso .size-112-l{line-height:336px !important}.mso .size-128,.mso .size-128-m,.mso .size-128-l{font-size:128px !important;line-height:132px !important}.mso .size-128-m{line-height:256px !important}.mso .size-128-l{line-height:384px !important}.mso .size-144,.mso .size-144-m,.mso .size-144-l{font-size:144px !important;line-height:148px !important}.mso .size-144-m{line-height:288px !important}.mso .size-144-l{line-height:432px !important}.mso .cmctbl table td,.mso .cmctbl table th{Margin-left:20px !important;Margin-right:20px !important}.mso .cmctbl- -inline,.mso .cmctbl{padding-left:20px !important;padding-right:20px !important}.mso .cmctbl- -inline table,.mso .cmctbl
-table{mso-table-lspace:0pt;mso-table-rspace:0pt;
-mso-line-height-rule:exactly}.size-8,.size-9{mso-text-raise:9px}.size-34,h1{mso-text-raise:13px}.size-36{mso-text-raise:14px}.size-40{mso-text-raise:16px}.size-44{mso-text-raise:17px}.size-48{mso-text-raise:18px}.size-56{mso-text-raise:22px}.size-64{mso-text-raise:25px}.size-72{mso-text-raise:28px}.size-80{mso-text-raise:32px}.size-96{mso-text-raise:40px}.size-112{mso-text-raise:46px}.size-128{mso-text-raise:54px}.size-144{mso-text-raise:58px}.size-11-m,.size-12-m{mso-text-raise:6px}.size-13-m,.size-14-m{mso-text-raise:7px}.size-15-m,.size-16-m,.size-8-l{mso-text-raise:8px}.size-17-m,.size-18-m{mso-text-raise:9px}.size-20-m,.size-10-l{mso-text-raise:10px}.size-22-m,.size-11-l{mso-text-raise:11px}.size-24-m,.size-12-l{mso-text-raise:12px}.size-26-m,.size-13-l{mso-text-raise:13px}.size-28-m,.size-14-l{mso-text-raise:14px}.size-30-m,.size-15-l{mso-text-raise:15px}.size-32-m,.size-16
--l{mso-text-raise:16px}.size-34-m,.size-17-l{mso-text-raise:17px}.size-36-m,.size-18-l{mso-text-raise:18px}.size-40-m,.size-20-l{mso-text-raise:20px}.size-44-m,.size-22-l{mso-text-raise:22px}.size-48-m,.size-24-l{mso-text-raise:24px}.size-26-l{mso-text-raise:26px}.size-56-m,.size-28-l{mso-text-raise:28px}.size-30-l{mso-text-raise:30px}.size-64-m,.size-32-l{mso-text-raise:32px}.size-34-l{mso-text-raise:34px}.size-72-m,.size-36-l{mso-text-raise:36px}.size-80-m,.size-40-l{mso-text-raise:40px}.size-44-l{mso-text-raise:44px}.size-96-m,.size-48-l{mso-text-raise:48px}.size-112-m,.size-56-l{mso-text-raise:56px}.size-128-m,.size-64-l{mso-text-raise:64px}.size-144-m,.size-72-l{mso-text-raise:72px}.size-80-l{mso-text-raise:80px}.size-96-l{mso-text-raise:96px}.size-112-l{mso-text-raise:112px}.size-128-l{mso-text-raise:128px}.size-144-l{mso-text-raise:144px}
-</style><![endif]-->
+    </style>
     <meta name="robots" content="noindex,nofollow" />
     <meta property="og:title" content="My First Campaign" />
 </head>
-<!--[if mso]>
-  <body class="mso">
-<![endif]-->
-<!--[if !mso]><!-->
 
 <body class="main full-padding" style="margin: 0;padding: 0;-webkit-text-size-adjust: 100%;">
     <!--<![endif]-->
@@ -898,7 +882,6 @@ mso-line-height-rule:exactly}.size-8,.size-9{mso-text-raise:9px}.size-34,h1{mso-
                         <div class="preheader"
                             style="Margin: 0 auto;max-width: 560px;min-width: 280px; width: 280px;width: calc(28000% - 167440px);">
                             <div style="border-collapse: collapse;display: table;width: 100%;">
-                                <!--[if mso]><table align="center" class="preheader" cellpadding="0" cellspacing="0" role="presentation"><tr><td style="width: 280px" valign="top"><![endif]-->
                                 <div class="snippet"
                                     style="display: table-cell;Float: left;font-size: 12px;line-height: 19px;max-width: 280px;min-width: 140px; width: 140px;width: calc(14000% - 78120px);padding: 10px 0 5px 0;color: #999;font-family: sans-serif;">
 
@@ -912,7 +895,6 @@ mso-line-height-rule:exactly}.size-8,.size-9{mso-text-raise:9px}.size-34,h1{mso-
                             style="Margin: 0 auto;max-width: 600px;min-width: 320px; width: 320px;width: calc(28000% - 167400px);overflow-wrap: break-word;word-wrap: break-word;word-break: break-word;">
                             <div class="layout__inner"
                                 style="border-collapse: collapse;display: table;width: 100%;background-color: #ffffff;">
-                                <!--[if mso]><table align="center" cellpadding="0" cellspacing="0" role="presentation"><tr class="layout-fixed-width" style="background-color: #ffffff;"><td style="width: 600px" class="w560"><![endif]-->
                                 <div class="column"
                                     style="text-align: left;color: #000;font-size: 15px;line-height: 23px;font-family: sans-serif;">
 
@@ -987,7 +969,6 @@ mso-line-height-rule:exactly}.size-8,.size-9{mso-text-raise:9px}.size-34,h1{mso-
                                     </div>
 
                                 </div>
-                                <!--[if mso]></td></tr></table><![endif]-->
                             </div>
                         </div>
 
@@ -995,7 +976,6 @@ mso-line-height-rule:exactly}.size-8,.size-9{mso-text-raise:9px}.size-34,h1{mso-
                             style="Margin: 0 auto;max-width: 600px;min-width: 320px; width: 320px;width: calc(28000% - 167400px);overflow-wrap: break-word;word-wrap: break-word;word-break: break-word;">
                             <div class="layout__inner"
                                 style="border-collapse: collapse;display: table;width: 100%;background-color: #f7f7f7;">
-                                <!--[if mso]><table align="center" cellpadding="0" cellspacing="0" role="presentation"><tr class="layout-fixed-width" style="background-color: #f7f7f7;"><td style="width: 600px" class="w560"><![endif]-->
                                 <div class="column"
                                     style="text-align: left;color: #000;font-size: 15px;line-height: 23px;font-family: sans-serif;">
 
@@ -1049,7 +1029,6 @@ mso-line-height-rule:exactly}.size-8,.size-9{mso-text-raise:9px}.size-34,h1{mso-
                                     </div>
 
                                 </div>
-                                <!--[if mso]></td></tr></table><![endif]-->
                             </div>
                         </div>
 
@@ -1061,9 +1040,6 @@ mso-line-height-rule:exactly}.size-8,.size-9{mso-text-raise:9px}.size-34,h1{mso-
                             id="footer-content">
                             <div class="layout__inner left-aligned-footer"
                                 style="border-collapse: collapse;display: table;width: 100%;">
-                                <!--[if mso]><table align="center" cellpadding="0" cellspacing="0" role="presentation"><tr class="layout-email-footer"><![endif]-->
-                                <!--[if mso]><td><table cellpadding="0" cellspacing="0"><![endif]-->
-                                <!--[if mso]><td valign="top"><![endif]-->
                                 <div class="column"
                                     style="text-align: left;font-size: 12px;line-height: 19px;color: #999;font-family: sans-serif;">
                                     <div class="footer-logo emb-logo-margin-box"
@@ -1073,21 +1049,12 @@ mso-line-height-rule:exactly}.size-8,.size-9{mso-text-raise:9px}.size-34,h1{mso-
                                             emb-flexible-footer-logo align="center">&#129504; Ideas!</div>
                                     </div>
                                 </div>
-                                <!--[if mso]></td><![endif]-->
-                                <!--[if mso]><td valign="top"><![endif]-->
                                 <div class="column"
                                     style="text-align: left;font-size: 12px;line-height: 19px;color: #999;font-family: sans-serif;display: none;">
                                     <div style="margin-left: 0;margin-right: 0;Margin-top: 10px;Margin-bottom: 10px;">
-                                        <div class="footer__share-button">
-
-
-
-
-                                        </div>
+                                        <div class="footer__share-button"> </div>
                                     </div>
                                 </div>
-                                <!--[if mso]></td><![endif]-->
-                                <!--[if mso]><td valign="top"><![endif]-->
                                 <table
                                     style="border-collapse: collapse;table-layout: fixed;display: inline-block;width: 466px;"
                                     cellpadding="0" cellspacing="0">
@@ -1114,15 +1081,12 @@ mso-line-height-rule:exactly}.size-8,.size-9{mso-text-raise:9px}.size-34,h1{mso-
                                                             <unsubscribe style="text-decoration: underline;"
                                                                 lang="en">Unsubscribe</unsubscribe>
                                                         </div>
-                                                        <!--[if mso]>&nbsp;<![endif]-->
                                                     </div>
                                                 </div>
                                             </td>
                                         </tr>
                                     </tbody>
                                 </table>
-                                <!--[if mso]></table></td><![endif]-->
-                                <!--[if mso]></td></tr></table><![endif]-->
                             </div>
                         </div>
                         <div style="line-height:40px;font-size:40px;" id="footer-bottom-spacing">&nbsp;</div>
