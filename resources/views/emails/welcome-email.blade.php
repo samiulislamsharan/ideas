@@ -1,14 +1,12 @@
-<!DOCTYPE html
-    PUBLIC "-//W3C//DTD XHTML 1.0 Transitional //EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html style="margin: 0;padding: 0;" xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE html>
+<html style="margin: 0;padding: 0;" xmlns="http://www.w3.org/1999/xhtml" lang="en">
 
 <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <title></title>
-    <!--[if !mso]><!-->
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" /><!--<![endif]-->
-    <meta name="viewport" content="width=device-width" />
-    <style type="text/css">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Welcome to Ideas</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width">
+    <style>
         @media only screen and (min-width: 620px) {
             .column {}
 
@@ -503,8 +501,8 @@
             }
         }
     </style>
-    <meta name="x-apple-disable-message-reformatting" />
-    <style type="text/css">
+    <meta name="x-apple-disable-message-reformatting" content="">
+    <style>
         .main,
         .mso {
             margin: 0;
@@ -705,28 +703,23 @@
         }
 
         /***
-* Mobile Styles
-*
-* 1. Overriding inline styles
-*/
+        * Mobile Styles
+        *
+        * 1. Overriding inline styles
+        */
         @media(max-width: 619px) {
 
             .email-flexible-footer .left-aligned-footer .column,
             .email-flexible-footer .center-aligned-footer,
             .email-flexible-footer .right-aligned-footer .column {
                 max-width: 100% !important;
-                /* [1] */
                 text-align: center !important;
-                /* [1] */
                 width: 100% !important;
-                /* [1] */
             }
 
             .flexible-footer-logo {
                 margin-left: 0px !important;
-                /* [1] */
                 margin-right: 0px !important;
-                /* [1] */
             }
 
             .email-flexible-footer .left-aligned-footer .flexible-footer__share-button__container,
@@ -734,23 +727,18 @@
             .email-flexible-footer .right-aligned-footer .flexible-footer__share-button__container {
                 display: inline-block;
                 margin-left: 5px !important;
-                /* [1] */
                 margin-right: 5px !important;
-                /* [1] */
             }
 
             .email-flexible-footer__additionalinfo--center {
                 text-align: center !important;
-                /* [1] */
             }
 
             .email-flexible-footer .left-aligned-footer table,
             .email-flexible-footer .center-aligned-footer table,
             .email-flexible-footer .right-aligned-footer table {
                 display: table !important;
-                /* [1] */
                 width: 100% !important;
-                /* [1] */
             }
 
             .email-flexible-footer .footer__share-button,
@@ -765,23 +753,6 @@
         only screen and (-o-min-device-pixel-ratio: 2/1),
         only screen and (min-device-pixel-ratio: 2),
         only screen and (min-resolution: 192dpi),
-        only screen and (min-resolution: 2dppx) {
-            .fblike {
-                background-image: url(https://i7.createsend1.com/static/eb/master/13-the-blueprint-3/images/fblike@2x.png) !important;
-            }
-
-            .tweet {
-                background-image: url(https://i8.createsend1.com/static/eb/master/13-the-blueprint-3/images/tweet@2x.png) !important;
-            }
-
-            .linkedinshare {
-                background-image: url(https://i9.createsend1.com/static/eb/master/13-the-blueprint-3/images/lishare@2x.png) !important;
-            }
-
-            .forwardtoafriend {
-                background-image: url(https://i10.createsend1.com/static/eb/master/13-the-blueprint-3/images/forward@2x.png) !important;
-            }
-        }
 
         @media (max-width: 321px) {
             .fixed-width.has-border .layout__inner {
@@ -808,7 +779,7 @@
         }
     </style>
 
-    <style type="text/css">
+    <style>
         .main,
         .mso {
             background-color: #404040
@@ -866,15 +837,14 @@
             font-family: sans-serif
         }
     </style>
-    <meta name="robots" content="noindex,nofollow" />
-    <meta property="og:title" content="My First Campaign" />
+    <meta name="robots" content="noindex,nofollow">
+    <meta property="og:title" content="My First Campaign">
 </head>
 
 <body class="main full-padding" style="margin: 0;padding: 0;-webkit-text-size-adjust: 100%;">
-    <!--<![endif]-->
     <table class="wrapper"
         style="border-collapse: collapse;table-layout: fixed;min-width: 320px;width: 100%;background-color: #404040;"
-        cellpadding="0" cellspacing="0" role="presentation">
+        role="presentation">
         <tbody>
             <tr>
                 <td>
@@ -884,7 +854,6 @@
                             <div style="border-collapse: collapse;display: table;width: 100%;">
                                 <div class="snippet"
                                     style="display: table-cell;Float: left;font-size: 12px;line-height: 19px;max-width: 280px;min-width: 140px; width: 140px;width: calc(14000% - 78120px);padding: 10px 0 5px 0;color: #999;font-family: sans-serif;">
-
                                 </div>
                             </div>
                         </div>
@@ -899,8 +868,7 @@
                                     style="text-align: left;color: #000;font-size: 15px;line-height: 23px;font-family: sans-serif;">
 
                                     <div style="Margin-left: 20px;Margin-right: 20px;Margin-top: 24px;">
-                                        <div
-                                            style="mso-line-height-rule: exactly;mso-text-raise: 11px;vertical-align: middle;">
+                                        <div style="vertical-align: middle;">
                                             <p style="Margin-top: 0;Margin-bottom: 20px;"><span
                                                     style="text-decoration: inherit;color: #565656;"><strong>Idea
                                                         Inc.</strong></span></p>
@@ -908,19 +876,8 @@
                                     </div>
 
                                     <div style="Margin-left: 20px;Margin-right: 20px;">
-                                        <div style="font-size: 12px;font-style: normal;font-weight: normal;line-height: 19px;Margin-bottom: 20px;"
-                                            align="left">
-                                            <a style="text-decoration: underline;transition: opacity 0.1s ease-in;color: #000;"
-                                                href="http://www.example.com"><img
-                                                    style="border: 0;display: block;height: auto;width: 100%;max-width: 292px;"
-                                                    alt="Breaking" width="292"
-                                                    src="images/breaking-99028a0b6d028a3c.jpg" /></a>
-                                        </div>
-                                    </div>
-
-                                    <div style="Margin-left: 20px;Margin-right: 20px;">
                                         <div
-                                            style="mso-line-height-rule: exactly;mso-text-raise: 11px;vertical-align: middle;">
+                                            style="vertical-align: middle;">
                                             <h1
                                                 style="Margin-top: 0;Margin-bottom: 20px;font-style: normal;font-weight: normal;color: #000;font-size: 40px;line-height: 47px;font-family: sans-serif;text-align: center;">
                                                 <span class="font-sans-serif"
@@ -931,13 +888,12 @@
                                     </div>
 
                                     <div style="Margin-left: 20px;Margin-right: 20px;">
-                                        <div style="mso-line-height-rule: exactly;line-height: 20px;font-size: 1px;">
+                                        <div style="line-height: 20px;font-size: 1px;">
                                             &nbsp;</div>
                                     </div>
 
                                     <div style="Margin-left: 20px;Margin-right: 20px;">
-                                        <div
-                                            style="mso-line-height-rule: exactly;mso-text-raise: 11px;vertical-align: middle;">
+                                        <div style="vertical-align: middle;">
                                             <p style="Margin-top: 0;Margin-bottom: 0;">&#128640; Welcome to Ideas!
                                                 &#127775;</p>
                                             <p style="Margin-top: 20px;Margin-bottom: 0;">Unleash your creativity and
@@ -964,68 +920,8 @@
                                     </div>
 
                                     <div style="Margin-left: 20px;Margin-right: 20px;Margin-bottom: 24px;">
-                                        <div style="mso-line-height-rule: exactly;line-height: 20px;font-size: 1px;">
+                                        <div style="line-height: 20px;font-size: 1px;">
                                             &nbsp;</div>
-                                    </div>
-
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="layout one-col fixed-width stack"
-                            style="Margin: 0 auto;max-width: 600px;min-width: 320px; width: 320px;width: calc(28000% - 167400px);overflow-wrap: break-word;word-wrap: break-word;word-break: break-word;">
-                            <div class="layout__inner"
-                                style="border-collapse: collapse;display: table;width: 100%;background-color: #f7f7f7;">
-                                <div class="column"
-                                    style="text-align: left;color: #000;font-size: 15px;line-height: 23px;font-family: sans-serif;">
-
-                                    <div
-                                        style="Margin-left: 20px;Margin-right: 20px;Margin-top: 24px;Margin-bottom: 24px;">
-                                        <div>
-                                            <div style="padding-top: 8px; text-align: center"><span
-                                                    style="padding-right: 4px;"><a
-                                                        style="text-decoration: underline;transition: opacity 0.1s ease-in;color: #000;display: inline-block;border-radius: 4px;width: 24px;height: 24px;max-height: 24px;background-color: #404040;"
-                                                        href="http://facebook.com"><img style="border: 0;"
-                                                            src="https://i1.createsend1.com/static/eb/master/13-the-blueprint-3/images/socialmedia/facebook-white-small.png"
-                                                            alt="Facebook" height="24"
-                                                            width="24" /></a></span><span
-                                                    style="padding-right: 4px;"><a
-                                                        style="text-decoration: underline;transition: opacity 0.1s ease-in;color: #000;display: inline-block;border-radius: 4px;width: 24px;height: 24px;max-height: 24px;background-color: #404040;"
-                                                        href="http://twitter.com"><img style="border: 0;"
-                                                            src="https://i4.createsend1.com/static/eb/master/13-the-blueprint-3/images/socialmedia/twitter-white-small.png"
-                                                            alt="Twitter" height="24"
-                                                            width="24" /></a></span><span
-                                                    style="padding-right: 4px;"><a
-                                                        style="text-decoration: underline;transition: opacity 0.1s ease-in;color: #000;display: inline-block;border-radius: 4px;width: 24px;height: 24px;max-height: 24px;background-color: #404040;"
-                                                        href="http://youtube.com"><img style="border: 0;"
-                                                            src="https://i6.createsend1.com/static/eb/master/13-the-blueprint-3/images/socialmedia/youtube-white-small.png"
-                                                            alt="YouTube" height="24"
-                                                            width="24" /></a></span><span
-                                                    style="padding-right: 4px;"><a
-                                                        style="text-decoration: underline;transition: opacity 0.1s ease-in;color: #000;display: inline-block;border-radius: 4px;width: 24px;height: 24px;max-height: 24px;background-color: #404040;"
-                                                        href="http://instagram.com"><img style="border: 0;"
-                                                            src="https://i10.createsend1.com/static/eb/master/13-the-blueprint-3/images/socialmedia/instagram-white-small.png"
-                                                            alt="Instagram" height="24"
-                                                            width="24" /></a></span><span
-                                                    style="padding-right: 4px;"><a
-                                                        style="text-decoration: underline;transition: opacity 0.1s ease-in;color: #000;display: inline-block;border-radius: 4px;width: 24px;height: 24px;max-height: 24px;background-color: #404040;"
-                                                        href="http://linkedin.com"><img style="border: 0;"
-                                                            src="https://i2.createsend1.com/static/eb/master/13-the-blueprint-3/images/socialmedia/linkedin-white-small.png"
-                                                            alt="LinkedIn" height="24"
-                                                            width="24" /></a></span><span
-                                                    style="padding-right: 4px;"><a
-                                                        style="text-decoration: underline;transition: opacity 0.1s ease-in;color: #000;display: inline-block;border-radius: 4px;width: 24px;height: 24px;max-height: 24px;background-color: #404040;"
-                                                        href="http://example.com"><img style="border: 0;"
-                                                            src="https://i5.createsend1.com/static/eb/master/13-the-blueprint-3/images/socialmedia/website-white-small.png"
-                                                            alt="Website" height="24"
-                                                            width="24" /></a></span><span
-                                                    style="padding-right: 4px;"><a
-                                                        style="text-decoration: underline;transition: opacity 0.1s ease-in;color: #000;display: inline-block;border-radius: 4px;width: 24px;height: 24px;max-height: 24px;background-color: #404040;"
-                                                        href="http://pinterest.com"><img style="border: 0;"
-                                                            src="https://i3.createsend1.com/static/eb/master/13-the-blueprint-3/images/socialmedia/pinterest-white-small.png"
-                                                            alt="Pinterest" height="24"
-                                                            width="24" /></a></span></div>
-                                        </div>
                                     </div>
 
                                 </div>
@@ -1043,10 +939,10 @@
                                 <div class="column"
                                     style="text-align: left;font-size: 12px;line-height: 19px;color: #999;font-family: sans-serif;">
                                     <div class="footer-logo emb-logo-margin-box"
-                                        style="font-size: 26px;line-height: 32px;Margin-top: 10px;Margin-bottom: 20px;color: #bfbfbf;font-family: sans-serif;"
-                                        align="center">
-                                        <div style="margin-right: 20px;max-width:200px;font-size:26px !important;line-height:32px !important;"
-                                            emb-flexible-footer-logo align="center">&#129504; Ideas!</div>
+                                        style="font-size: 26px;line-height: 32px;Margin-top: 10px;Margin-bottom: 20px;color: #bfbfbf;font-family: sans-serif;">
+                                        <div
+                                            style="margin-right: 20px;max-width:200px;font-size:26px !important;line-height:32px !important;">
+                                            &#129504; Ideas!</div>
                                     </div>
                                 </div>
                                 <div class="column"
@@ -1056,8 +952,7 @@
                                     </div>
                                 </div>
                                 <table
-                                    style="border-collapse: collapse;table-layout: fixed;display: inline-block;width: 466px;"
-                                    cellpadding="0" cellspacing="0">
+                                    style="border-collapse: collapse;table-layout: fixed;display: inline-block;width: 466px;padding:0px; border-spacing: 0px;">
                                     <tbody>
                                         <tr>
                                             <td>
@@ -1067,7 +962,7 @@
                                                         style="margin-left: 0;margin-right: 0;Margin-top: 10px;Margin-bottom: 10px;">
                                                         <div class="email-footer__additional-info"
                                                             style="font-size: 12px;line-height: 19px;margin-bottom: 18px;margin-top: 0px;">
-                                                            <div bind-to="address">
+                                                            <div>
                                                                 <p class="email-flexible-footer__additionalinfo--center"
                                                                     style="Margin-top: 0;Margin-bottom: 0;"><span
                                                                         style="text-decoration: inherit;color: #bfbfbf;">Idea
@@ -1078,8 +973,9 @@
 
                                                         <div class="email-footer__additional-info"
                                                             style="font-size: 12px;line-height: 19px;margin-bottom: 15px;Margin-top: 18px;">
-                                                            <unsubscribe style="text-decoration: underline;"
-                                                                lang="en">Unsubscribe</unsubscribe>
+                                                            <div style="text-decoration: underline;" lang="en">
+                                                                Unsubscribe
+                                                            </div>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -1096,7 +992,7 @@
             </tr>
         </tbody>
     </table>
-    <style type="text/css">
+    <style>
         @media (max-width:619px) {
 
             .email-flexible-footer .left-aligned-footer .column,
