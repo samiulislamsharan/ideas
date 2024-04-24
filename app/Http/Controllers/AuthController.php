@@ -18,9 +18,6 @@ class AuthController extends Controller
     public function store()
     {
         // Validate the user
-        // Create the user
-        // Redirect the user
-
         $validated = request()->validate([
             'name' => 'required|min:3|max:40',
             'username' => 'required|min:3|max:40|unique:users,username',
@@ -28,6 +25,7 @@ class AuthController extends Controller
             'password' => 'required|confirmed|min:8',
         ]);
 
+        // Create the user
         $user = User::create(
             [
                 'name' => $validated['name'],
@@ -37,8 +35,10 @@ class AuthController extends Controller
             ]
         );
 
+        // Send the welcome email
         Mail::to($user->email)->send(new WelcomeEmail($user));
 
+        // Redirect the user
         return redirect()->route('dashboard')->with('successMessage', 'Account created successfully!');
     }
 
