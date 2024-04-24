@@ -48,7 +48,7 @@
                     <input type="submit" name="submit" class="btn btn-dark btn-md" value="submit">
                 </div>
                 <div class="text-right mt-2">
-                    <a href="/login" class="text-dark">Login here</a>
+                    <p>Already registered? <a href="/login" class="text-dark fw-bolder">Login here</a></p>
                 </div>
             </form>
         </div>
