@@ -16,7 +16,23 @@
                     <p class="mb-0 small text-truncate">{{ $user->username }}</p>
                 </div>
                 <a class="btn btn-primary-soft rounded-circle icon-md ms-auto" href="#">
-                    <i class="fa-solid fa-plus"> </i>
+                    @auth
+                        @if (Auth::id() !== $user->id)
+                            <div class="mt-3">
+                                @if (Auth::user()->follows($user))
+                                    
+                                @else
+                                    <form method="POST" action="{{ route('users.follow', $user->id) }}">
+                                        @csrf
+                                        <div class="mt-3">
+                                            <button class="btn btn-sm fa-solid fa-plus">
+                                            </button>
+                                        </div>
+                                    </form>
+                                @endif
+                            </div>
+                        @endif
+                    @endauth
                 </a>
             </div>
         @endforeach
