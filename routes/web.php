@@ -12,6 +12,7 @@ use App\Http\Controllers\UserController;
 use App\Http\Controllers\Admin\DashboardController as AdminDashboardController;
 use App\Http\Controllers\Admin\IdeaController as AdminIdeaController;
 use App\Http\Controllers\Admin\UserController as AdminUserController;
+use App\Notifications\UserFollowedNotification;
 use Illuminate\Support\Facades\Artisan;
 use Illuminate\Support\Facades\Route;
 
@@ -59,6 +60,13 @@ Route::post('ideas/{idea}/unlike', [IdeaLikeController::class, 'unlike'])->middl
 
 Route::get('/feed', FeedController::class)->middleware('auth')->name('feed');
 
+// "see more" notification page route
+Route::get('/notification', function () {
+    return view('show-more-notifications');
+})->name('notifications');
+
+// notification mark as read route
+Route::get('/notification/{id}', [UserFollowedNotification::class, 'markAsRead'])->name('notification.read');
 
 Route::get('/terms', function () {
     return view('terms');
