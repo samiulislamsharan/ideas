@@ -21,8 +21,26 @@
                 @endguest
 
                 @auth
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle {{ Route::is('notifications') ? 'active' : '' }}" href="#"
+                            role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <span class="fas fa-bell"></span>
+                            {{-- get notification count --}}
+                            @if (Auth::user()->unreadNotifications->count() > 0)
+                                <span class="badge bg-danger rounded-start-pill">
+                                    {{ Auth::user()->unreadNotifications->count() }}
+                                </span>
+                            @endif
+                        </a>
+                        <ul class="dropdown-menu" style="min-width:20rem">
+                            @include('shared.notification-card')
+                            {{-- see more notifications --}}
+                            <li><a class="dropdown-item"
+                                    href="{{ route('notifications') }}">{{ __('ideas.see_more') }}</a></li>
+                        </ul>
+                    </li>
                     @if (Auth::user()->is_admin)
-                        <a class=" {{ Route::is('admin.dashboard') ? 'active' : '' }} nav-link"
+                        <a class="nav-link {{ Route::is('admin.dashboard') ? 'active' : '' }}"
                             href="{{ route('admin.dashboard') }}">
                             <span class="fas fa-bolt"> </span>
                             {{ __('admin.admin') }}
