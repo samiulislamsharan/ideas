@@ -42,5 +42,7 @@ return [
     'unfollow' => 'আনফলো',
     'who_to_follow' => 'যাদের ফলো করতে পারেন',
     'no_ideas' => 'কোন আইডিয়া পাওয়া যায়নি।',
-
+    'notifications' => 'বিজ্ঞপ্তি',
+    'follow_message' => 'আপনাকে ফলো করছে !',
+    'see_more' => 'আরও দেখুন',
 ];

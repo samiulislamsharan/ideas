@@ -42,5 +42,7 @@ return [
     'unfollow' => 'Unfollow',
     'who_to_follow' => 'Who to follow',
     'no_ideas' => 'No ideas found.',
-
+    'notifications' => 'Notifications',
+    'follow_message' => 'Followed you!',
+    'see_more' => 'See more',
 ];
