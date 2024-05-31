@@ -27,7 +27,7 @@ class FollowerController extends Controller
 
         $follower->followings()->detach($user);
 
-        $user->notifications()->where('type', UserFollowedNotification::class)->where('data->follower_id', $follower->id)->delete();
+        $user->notifications()->where('type', UserFollowNotification::class)->where('data->follower_id', $follower->id)->delete();
 
         return redirect()->route('users.show', $user->id)->with('success', "Unfollowed successfully!");
     }
