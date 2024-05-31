@@ -12,7 +12,7 @@ use App\Http\Controllers\UserController;
 use App\Http\Controllers\Admin\DashboardController as AdminDashboardController;
 use App\Http\Controllers\Admin\IdeaController as AdminIdeaController;
 use App\Http\Controllers\Admin\UserController as AdminUserController;
-use App\Notifications\UserFollowedNotification;
+use App\Notifications\UserFollowNotification;
 use Illuminate\Support\Facades\Artisan;
 use Illuminate\Support\Facades\Route;
 
@@ -66,7 +66,7 @@ Route::get('/notification', function () {
 })->name('notifications');
 
 // notification mark as read route
-Route::get('/notification/{id}', [UserFollowedNotification::class, 'markAsRead'])->name('notification.read');
+Route::get('/notification/{id}', [UserFollowNotification::class, 'markAsRead'])->name('notification.read');
 
 Route::get('/terms', function () {
     return view('terms');
