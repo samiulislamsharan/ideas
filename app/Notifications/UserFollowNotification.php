@@ -8,7 +8,7 @@ use Illuminate\Contracts\Queue\ShouldQueue;
 use Illuminate\Notifications\Messages\MailMessage;
 use Illuminate\Notifications\Notification;
 
-class UserFollowedNotification extends Notification
+class UserFollowNotification extends Notification
 {
     use Queueable;
 
@@ -49,11 +49,15 @@ class UserFollowedNotification extends Notification
         ];
     }
 
-    // mark as read
+    /**
+     * Mark notification as read
+     *
+     * @param User $id
+     * @return void
+     */
     public function markAsRead($id)
     {
-        if($id)
-        {
+        if ($id) {
             auth()->user()->notifications()->where('id', $id)->first()->markAsRead();
         }
 
