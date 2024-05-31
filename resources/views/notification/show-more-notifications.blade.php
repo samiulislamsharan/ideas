@@ -9,7 +9,7 @@
         </div>
         <div class="col-lg-6 col-sm-12">
             <h1>{{ __('ideas.notifications') }}</h1>
-            @include('shared.notification-card')
+            @include('notification.notification-card')
         </div>
         <div class="col-lg-3 col-sm-12">
             @include('shared.search-bar')
