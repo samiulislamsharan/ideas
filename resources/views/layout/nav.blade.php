@@ -33,10 +33,10 @@
                             @endif
                         </a>
                         <ul class="dropdown-menu" style="min-width:20rem">
-                            @include('shared.notification-card')
+                            @include('notification.notification-card')
                             {{-- see more notifications --}}
-                            <li><a class="dropdown-item"
-                                    href="{{ route('notifications') }}">{{ __('ideas.see_more') }}</a></li>
+                            <li><a class="dropdown-item" href="{{ route('notifications') }}">{{ __('ideas.see_more') }}</a>
+                            </li>
                         </ul>
                     </li>
                     @if (Auth::user()->is_admin)
