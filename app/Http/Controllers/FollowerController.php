@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\User;
 use Illuminate\Http\Request;
-use App\Notifications\UserFollowedNotification;
+use App\Notifications\UserFollowNotification;
 
 class FollowerController extends Controller
 {
@@ -15,7 +15,9 @@ class FollowerController extends Controller
 
         $follower->followings()->attach($user);
 
-        $user->notify(new UserFollowedNotification($follower));
+        if (auth()->user()) {
+            $user->notify(new UserFollowNotification($follower));
+        }
 
         return redirect()->route('users.show', $user->id)->with('success', "Followed successfully!");
     }
