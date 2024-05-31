@@ -62,7 +62,7 @@ Route::get('/feed', FeedController::class)->middleware('auth')->name('feed');
 
 // "see more" notification page route
 Route::get('/notification', function () {
-    return view('show-more-notifications');
+    return view('notification.show-more-notifications');
 })->name('notifications');
 
 // notification mark as read route
